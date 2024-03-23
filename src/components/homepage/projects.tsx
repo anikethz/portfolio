@@ -1,14 +1,17 @@
+'use client';
 import React from 'react'
 import { DiJava, DiJavascript } from 'react-icons/di'
+import config from '../../../next.config.mjs';
 const Projects = () => {
+    const basePath = (config.nextConfig.basePath===undefined)?"":config.nextConfig.basePath;
     const cardData = [
         {
-            icon:"/api-interface-svgrepo-com.webp",
+            icon:`${basePath}/api-interface-svgrepo-com.webp`,
             heading: "Java",
             content: "Worked on a Caching layer for salesforce made using Spring Boot"
         },
         {
-            icon:"/cloud-acceleration-svgrepo-com.webp",
+            icon:`${basePath}/cloud-acceleration-svgrepo-com.webp`,
             heading: "JavaScript",
             content: "Developed and Maintained a wrapper for ElasticSearch for Search and Suggestions"
         },
