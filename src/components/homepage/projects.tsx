@@ -1,9 +1,9 @@
 'use client';
 import React from 'react'
 import { DiJava, DiJavascript } from 'react-icons/di'
-import config from '../../../next.config.mjs';
+import config from '../../settings';
 const Projects = () => {
-    const basePath = (config.nextConfig.basePath===undefined)?"":config.nextConfig.basePath;
+    const basePath = (config.Settings.basePath===undefined)?"":config.Settings.basePath;
     const cardData = [
         {
             icon:`${basePath}/api-interface-svgrepo-com.webp`,
