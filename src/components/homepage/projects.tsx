@@ -17,8 +17,8 @@ const Projects = () => {
     return (
         <div className='w-full bg-white py-16 px-4'>
             <div className='max-w[1240px] mx-auto grid md:grid-cols-2'>
-                {cardData.map((data) => 
-                    <div className='flex flex-col items-center justify-center mx-auto my-4 p-4 bg-slate-50 rounded-md shadow-md'>
+                {cardData.map((data,i) => 
+                    <div key={i} className='flex flex-col items-center justify-center mx-auto my-4 p-4 bg-slate-50 rounded-md shadow-md'>
                     <img 
                         className='w-32 md'
                         src={data.icon} alt='Hello WOrld'/>
